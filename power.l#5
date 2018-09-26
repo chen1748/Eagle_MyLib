@@ -160,32 +160,6 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="TPS54332" prefix="U">
-<description>&lt;h3&gt;TPS54332 3.5-A, 28-V, 1-MHz, Step-Down DC-DC Converter With Eco-Mode&lt;/h3&gt;
-&lt;b&gt;Datasheet:&lt;/b&gt;
-&lt;a href=" http://www.ti.com/lit/ds/symlink/tps54332.pdf"&gt;http://www.ti.com/lit/ds/symlink/tps54332.pdf&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="TPS54332" x="-2.54" y="10.16"/>
-</gates>
-<devices>
-<device name="" package="DDA(8-POWERSOIC)">
-<connects>
-<connect gate="G$1" pin="BOOT" pad="P$1"/>
-<connect gate="G$1" pin="COMP" pad="P$6"/>
-<connect gate="G$1" pin="EN" pad="P$3"/>
-<connect gate="G$1" pin="GND" pad="P$7"/>
-<connect gate="G$1" pin="PAD" pad="P$9"/>
-<connect gate="G$1" pin="PH" pad="P$8"/>
-<connect gate="G$1" pin="SS" pad="P$4"/>
-<connect gate="G$1" pin="VIN" pad="P$2"/>
-<connect gate="G$1" pin="VSNS" pad="P$5"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 </drawing>
