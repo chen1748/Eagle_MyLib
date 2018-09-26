@@ -226,14 +226,10 @@ Diode with low voltage drop</description>
 <description>B320AE
 &lt;br&gt;datasheet:&lt;a href="https://www.diodes.com/assets/Datasheets/B320AE-B345AE.pdf"&gt;https://www.diodes.com/assets/Datasheets/B320AE-B345AE.pdf&lt;/a&gt;</description>
 <gates>
-<gate name="G$1" symbol="DIODE" x="0" y="0"/>
+<gate name="G$1" symbol="DIODE-SCHOTTKY" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="SMA">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
 <technologies>
 <technology name=""/>
 </technologies>

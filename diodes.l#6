@@ -187,11 +187,14 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="B320A">
+<deviceset name="B320A" prefix="D">
+<description>B320A
+&lt;br&gt;datasheet:&lt;a href="https://www.diodes.com/assets/Datasheets/B320AE-B345AE.pdf"&gt;https://www.diodes.com/assets/Datasheets/B320AE-B345AE.pdf&lt;/a&gt;</description>
 <gates>
+<gate name="G$1" symbol="DIODE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="">
+<device name="" package="SMA">
 <technologies>
 <technology name=""/>
 </technologies>
