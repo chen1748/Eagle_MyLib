@@ -309,7 +309,7 @@
 <gate name="G$1" symbol="DRV8871" x="2.54" y="-5.08"/>
 </gates>
 <devices>
-<device name="" package="DDA(R-PDSO-G8)">
+<device name="" package="DDA(8-POWERSOIC)">
 <connects>
 <connect gate="G$1" pin="GND" pad="P$1"/>
 <connect gate="G$1" pin="ILIM" pad="P$4"/>

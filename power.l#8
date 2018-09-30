@@ -160,7 +160,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="TPS54332">
+<deviceset name="TPS54332" prefix="U">
 <description>&lt;h3&gt;TPS54332 3.5-A, 28-V, 1-MHz, Step-Down DC-DC Converter With Eco-Mode&lt;/h3&gt;
 &lt;b&gt;Datasheet:&lt;/b&gt;
 &lt;a href=" http://www.ti.com/lit/ds/symlink/tps54332.pdf"&gt;http://www.ti.com/lit/ds/symlink/tps54332.pdf&lt;/a&gt;</description>
