@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -161,10 +161,14 @@
 <package name="1210">
 <smd name="P$1" x="-1.275" y="0" dx="0.85" dy="2.7" layer="1"/>
 <smd name="P$2" x="1.275" y="0" dx="0.85" dy="2.7" layer="1"/>
-<wire x1="-2.54" y1="1.27" x2="-2.54" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="2.54" y1="1.27" x2="2.54" y2="-1.27" width="0.127" layer="21"/>
 <text x="-2.54" y="-2.54" size="1.016" layer="25">&gt;NAME</text>
 <text x="-2.54" y="1.778" size="1.016" layer="27">&gt;VALUE</text>
+</package>
+<package name="SRR1208">
+<smd name="P$1" x="-5" y="0" dx="4" dy="7" layer="1"/>
+<smd name="P$2" x="5" y="0" dx="4" dy="7" layer="1"/>
+<wire x1="-6.5" y1="6.5" x2="6.5" y2="6.5" width="0.127" layer="21"/>
+<wire x1="6.5" y1="-6.5" x2="-6.5" y2="-6.5" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -183,6 +187,7 @@
 </symbols>
 <devicesets>
 <deviceset name="100UH_SMD" prefix="L">
+<description>datasheet: &lt;a href="https://www.digikey.com/product-detail/en/taiyo-yuden/BRL3225T101K/587-2170-1-ND/2002868"&gt;https://www.digikey.com/product-detail/en/taiyo-yuden/BRL3225T101K/587-2170-1-ND/2002868&lt;a&gt;</description>
 <gates>
 <gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
 </gates>
@@ -192,6 +197,44 @@
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="68UH_SMD" prefix="L">
+<description>digikey: &lt;a href="https://www.digikey.com/product-detail/en/BRL3225T680K/587-3031-1-ND/2763402/?itemSeq=273182789"&gt;https://www.digikey.com/product-detail/en/BRL3225T680K/587-3031-1-ND/2763402/?itemSeq=273182789&lt;/a&gt;
+&lt;br&gt;</description>
+<gates>
+<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1210">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="15UH_SMD" prefix="L">
+<description>SRR1208-150ML
+&lt;br&gt;Current Rating: 4A
+&lt;br&gt;Shielded
+digikey: &lt;a href="https://www.digikey.com/product-detail/en/bourns-inc/SRR1208-150ML/SRR1208-150MLCT-ND/2353018"&gt;
+https://www.digikey.com/product-detail/en/bourns-inc/SRR1208-150ML/SRR1208-150MLCT-ND/2353018&lt;/a&gt;
+datasheet: &lt;a href="https://www.bourns.com/docs/Product-Datasheets/SRR1208.pdf"&gt;
+https://www.bourns.com/docs/Product-Datasheets/SRR1208.pdf
+&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
